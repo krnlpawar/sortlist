@@ -31,9 +31,9 @@ function App() {
     setUsers(sortedUsers);
   };
   return (
-    <>
+    <div className="container">
       <h1>Users</h1>
-      {loading && <p>Loading...</p>}
+      {loading && <p className="loading-message">Loading...</p>}
       {!loading && (
         <>
           <ul>
@@ -44,7 +44,7 @@ function App() {
           <button onClick={sortUsers}>Sort</button>
         </>
       )}
-    </>
+    </div>
   );
 }
 
